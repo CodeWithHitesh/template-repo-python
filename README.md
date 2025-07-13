@@ -9,6 +9,7 @@ starting point for new Python projects.
 - `src/` - application source code
 - `tests/` - unit tests
 - `.github/workflows/` - CI configuration
+- `pyproject.toml` - optional project metadata for packaging
 
 ## Branch Protection
 
@@ -31,6 +32,13 @@ allowed to bypass these requirements where needed.
    pip install -r requirements.txt  # optional
    pytest
    ```
+
+## pyproject.toml
+
+`pyproject.toml` stores build configuration and project metadata. It enables
+standard packaging with `setuptools` and can declare dependencies. You may
+remove it for simple scripts, but it is recommended if you intend to distribute
+the project as a package.
 
 ## License
 
